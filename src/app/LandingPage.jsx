@@ -12,17 +12,14 @@ import { Mousewheel, Pagination, Scrollbar,Autoplay,EffectFade } from 'swiper/mo
 
 const LandingPage = () => {
   return (
-    <div className="w-sreen relative">
+    <div className="w-sreen relative lg:max-h-50"style={{zIndex:'180'}}>
     <div className="w-sreen  bg-slate-600 " style={{maxWidth:'100vw'}}>
       <Swiper
         effect="fade"
         // direction="vertical"
         slidesPerView={1}
         spaceBetween={30}
-     
-        pagination={{
-          clickable: true,
-        }}
+        
         autoplay={{
           delay: 3000,
           disableOnInteraction: false, 
@@ -69,9 +66,7 @@ const LandingPage = () => {
         slidesPerView={1}
         spaceBetween={30}
      
-        pagination={{
-          clickable: true,
-        }}
+    
         autoplay={{
           delay: 3000,
           disableOnInteraction: false, 
