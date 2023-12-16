@@ -1,124 +1,67 @@
 
-'use client'
+
 import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
-import 'swiper/css/autoplay';
-// import 'swiper/css/fade';
-import 'swiper/css/effect-fade';
-import { Mousewheel, Pagination, Scrollbar,Autoplay,EffectFade } from 'swiper/modules';
-
 const LandingPage = () => {
+
+
   return (
-    <div className="w-sreen relative lg:max-h-50"style={{zIndex:'180'}}>
-    <div className="w-sreen  bg-slate-600 " style={{maxWidth:'100vw'}}>
-      <Swiper
-        effect="fade"
-        // direction="vertical"
-        slidesPerView={1}
-        spaceBetween={30}
-        
-        autoplay={{
-          delay: 3000,
-          disableOnInteraction: false, 
-        }}
-       
-        modules={[ Pagination, Autoplay,EffectFade]}
-        className=" w-screen  m-2"
-        // style={{maxWidth:'200px'}}
-      >
-
-  
-  <SwiperSlide>
-    <img src="land1.jpg"/>
-  </SwiperSlide>
-  <SwiperSlide>
-    <img src="land2.jpg"/>
-  </SwiperSlide>
-  <SwiperSlide>
-    <img src="land3.jpg"/>
-  </SwiperSlide>
-  <SwiperSlide>
-    <img src="land4.jpg"/>
-  </SwiperSlide>
-  <SwiperSlide>
-    <img src="land5.jpg"/>
-  </SwiperSlide>
-  <SwiperSlide>
-    <img src="land6.jpg"/>
-  </SwiperSlide>
-
-
-       
-  
-      
-        
-      </Swiper>
-    </div>
-    <div className="absolute inset-0 flex justify-center items-center mb-20">
-
-    <div className="w-3/2 h-1/2 mb-20 lg:mb-20" style={{maxWidth:'75vw'}}>
-      <Swiper
-        effect="fade"
-        // direction="vertical"
-        slidesPerView={1}
-        spaceBetween={30}
-     
-    
-        autoplay={{
-          delay: 3000,
-          disableOnInteraction: false, 
-        }}
-       
-        modules={[ Pagination, Autoplay,EffectFade]}
-        className=" w-11/12  m-2"
-        // className="lg:w-1/2 lg:h-1/2 lg:max-w-50vw m-2"
-        // style={{maxWidth:'200px'}}
-      >
-
-  <SwiperSlide>
-    <img src="land1.jpg"/>
-  </SwiperSlide>
-  <SwiperSlide>
-    <img src="land2.jpg"/>
-  </SwiperSlide>
-  <SwiperSlide>
-    <img src="land3.jpg"/>
-  </SwiperSlide>
-  <SwiperSlide>
-    <img src="land4.jpg"/>
-  </SwiperSlide>
-  <SwiperSlide>
-    <img src="land5.jpg"/>
-  </SwiperSlide>
-  <SwiperSlide>
-    <img src="land6.jpg"/>
-  </SwiperSlide>
-
-
-
-       
-  
-      
-        
-      </Swiper>
-      </div>
-    </div>
-    <div className="absolute inset-0 flex -space-x-2 overflow-hidden" style={{ zIndex: 100 }}>
-  <div className="inline-block lg:h-60 lg:w-60 h-40 w-40 rounded-full bg-opacity-25   bg-gradient-to-r from-teal-400 to-gray-800" style={{opacity:'0.4' }}></div>
-</div>
-
-<div className="relative">
-  <div className="absolute bottom-0 right-0 lg:h-60 lg:w-60 h-40 w-40 rounded-full bg-opacity-25 bg-gradient-to-r from-teal-400 to-gray-800" style={{ zIndex: 100, opacity: '0.4' }}></div>
+<div className='w-full flex flex-col bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-indigo-800 to-black'>
+<div className='w-full h-[70vh] lg:h-screen p-1 flex flex-col items-center mt-2  '>
+  <div className='w-11/12 h-3/4 flex flex-row justify-center items-center shadow-2xl shadow-cyan-400/40 rounded-md backdrop-blur-lg bg-black/50' style={{ backgroundImage: 'url("land2.jpg")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+  <div className='w-10/12 h-3/4 shadow-lg shadow-cyan-400/40 rounded-xl' style={{ backgroundImage: 'url("land2.jpg")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
 </div>
 
 
 
+  </div>
+<div className='w-full flex flex-row justify-center items center p-1 mt-2'>
 
-    </div>
+
+
+
+
+<iframe src="https://giphy.com/embed/rj12FejFUysTK" className='hidden lg:block lg:w-1/6  lg:p-2 lg:h-[150px] shadow-2xl shadow-green-400 rounded-full' ></iframe>
+
+<iframe src="https://giphy.com/embed/xUOxeZUc8UFwMgH2MM" className='hidden lg:block lg:w-1/6  lg:p-2 lg:h-[150px] shadow-2xl shadow-green-400 rounded-full' ></iframe>
+
+<iframe src="https://giphy.com/embed/0X7Bn1dSzEhPgwXoys" className='w-1/3 lg:w-1/6 h-[120px]  lg:p-2 lg:h-[150px] shadow-2xl shadow-green-400 rounded-full' ></iframe>
+
+<iframe src="https://giphy.com/embed/j52bGrifXj6rIPEn3f" className='w-1/3 lg:w-1/6 h-[120px]  lg:p-2 lg:h-[150px] shadow-2xl shadow-green-400 rounded-full' ></iframe>
+
+<iframe src="https://giphy.com/embed/l3vR1vV9rzkAnPTSU" className='w-1/3 lg:w-1/6 h-[120px]  lg:p-2 lg:h-[150px] shadow-2xl shadow-green-400 rounded-full' ></iframe>
+<div className="w-1/8 hidden lg:flex justify-center items-center">
+<svg
+      className="animate-bounce flex items-center justify-center stroke-purple-500"
+      fill="#800080"
+      height="50px"
+      width="50px"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M7 10l5 5 5-5z" />
+</svg>
+</div>
+
+</div>
+</div>
+<div className='shadow-2xl shadow-pink-400'>
+<h1 className="flex flex-col justify-center items-center bg-clip-text text-transparent text-[40px] lg:text-[60px] bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-gray-900 via-purple-500 to-white" style={{fontFamily:'Neon Energy X'}}> <p>The promise of a</p> <p>cinematic adventure</p></h1>
+<div className='w-full flex flex-row justify-center lg:hidden'>
+<svg
+      className="animate-bounce  stroke-purple-500"
+      fill="#800080"
+      height="50px"
+      width="50px"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M7 10l5 5 5-5z" />
+</svg>
+</div>
+</div>
+</div>
   );
 };
 
 export default LandingPage;
+

@@ -3,7 +3,7 @@ import React from 'react';
 import MovieCarousel from './Components/MovieCarousel';
 import Search from './Search'
 
-  function getMovie() {
+async function getMovie() {
   const apiKey = 'f847d8a74355547b393b1921d50fb6aa'; // Replace with your actual TMDB API key
   const tmdbEndpoint = 'https://api.themoviedb.org/3/discover/movie';
   const params = {
@@ -18,8 +18,8 @@ import Search from './Search'
   let movies = [];
 
   while (uniqueMovies.size < 100) {
-    const response =   fetch(`${tmdbEndpoint}?${new URLSearchParams(params)}`);
-    const data =   response.json();
+    const response = await fetch(`${tmdbEndpoint}?${new URLSearchParams(params)}`);
+    const data = await response.json();
     
 
     const newMovies = data.results.filter(movie => !uniqueMovies.has(movie.id));
@@ -34,7 +34,7 @@ import Search from './Search'
 
   return movies.slice(0, 100); // Return only the first 100 movies
 }
-  function getAcMovie() {
+async function getAcMovie() {
   const apiKey = 'f847d8a74355547b393b1921d50fb6aa'; // Replace with your actual TMDB API key
   const tmdbEndpoint = 'https://api.themoviedb.org/3/discover/movie';
   const params = {
@@ -50,8 +50,8 @@ import Search from './Search'
   let movies = [];
 
   while (uniqueMovies.size < 100) {
-    const response =   fetch(`${tmdbEndpoint}?${new URLSearchParams(params)}`);
-    const data =   response.json();
+    const response = await fetch(`${tmdbEndpoint}?${new URLSearchParams(params)}`);
+    const data = await response.json();
     
 
     const newMovies = data.results.filter(movie => !uniqueMovies.has(movie.id));
@@ -66,7 +66,7 @@ import Search from './Search'
 
   return movies.slice(0, 100); // Return only the first 100 movies
 }
-  function getCoMovie() {
+async function getCoMovie() {
   const apiKey = 'f847d8a74355547b393b1921d50fb6aa'; // Replace with your actual TMDB API key
   const tmdbEndpoint = 'https://api.themoviedb.org/3/discover/movie';
   const params = {
@@ -82,8 +82,8 @@ import Search from './Search'
   let movies = [];
 
   while (uniqueMovies.size < 100) {
-    const response =   fetch(`${tmdbEndpoint}?${new URLSearchParams(params)}`);
-    const data =   response.json();
+    const response = await fetch(`${tmdbEndpoint}?${new URLSearchParams(params)}`);
+    const data = await response.json();
     
 
     const newMovies = data.results.filter(movie => !uniqueMovies.has(movie.id));
@@ -98,7 +98,7 @@ import Search from './Search'
 
   return movies.slice(0, 100); // Return only the first 100 movies
 }
-  function getSciMovie() {
+async function getSciMovie() {
   const apiKey = 'f847d8a74355547b393b1921d50fb6aa'; // Replace with your actual TMDB API key
   const tmdbEndpoint = 'https://api.themoviedb.org/3/discover/movie';
   const params = {
@@ -114,8 +114,8 @@ import Search from './Search'
   let movies = [];
 
   while (uniqueMovies.size < 100) {
-    const response =   fetch(`${tmdbEndpoint}?${new URLSearchParams(params)}`);
-    const data =   response.json();
+    const response = await fetch(`${tmdbEndpoint}?${new URLSearchParams(params)}`);
+    const data = await response.json();
     
 
     const newMovies = data.results.filter(movie => !uniqueMovies.has(movie.id));
@@ -135,18 +135,18 @@ import Search from './Search'
 
 
 
-export default   function BollyWood() {
-  const movies =   getMovie();
-  const acmovies =   getAcMovie();
-  const comovies =   getCoMovie();
-  const scimovies =   getSciMovie();
+export default async function Bolly() {
+  const movies = await getMovie();
+  const acmovies = await getAcMovie();
+  const comovies = await getCoMovie();
+  const scimovies = await getSciMovie();
   const allmovies = [...movies, ...acmovies, ...comovies, ...scimovies];
 
 
   return (
      
 
-<div className='m-2 w-full'>
+<div className='m-2 w-full bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-indigo-800 to-black'>
 
 <Search allMovAniMang={allmovies} Id={1}/>
 <span className="ml-3 text-3xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent" style={{fontFamily:'Old London'}}>Most popular</span>
@@ -159,7 +159,7 @@ export default   function BollyWood() {
 <MovieCarousel movies={scimovies} />
 
 
-    </div>
+</div>
 
 
   );

@@ -1,19 +1,16 @@
-// IconPositionTabs.js
+// // IconPositionTabs.js
 'use client';
 import React, { useState } from 'react';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
-import LocalMoviesIcon from '@mui/icons-material/LocalMovies'; // Icon for Bollywood
-import MovieIcon from '@mui/icons-material/Movie'; // Icon for Hollywood
-import BookIcon from '@mui/icons-material/MenuBook'; // Icon for Manga
-import VideoLibraryIcon from '@mui/icons-material/VideoLibrary'; // Icon for Anime
-import BollyWood from './BollyWood';
-import HollyWood from './HollyWood';
-import Anime from './Anime';
-import Manga from './Manga';
+import LocalMoviesIcon from '@mui/icons-material/LocalMovies'; 
+import MovieIcon from '@mui/icons-material/Movie'; 
+import BookIcon from '@mui/icons-material/MenuBook'; 
+import VideoLibraryIcon from '@mui/icons-material/VideoLibrary'; 
 
 
-export default function IconPositionTabs() {
+
+const IconPositionTabs=({hollyWood,bollyWood,manga,anime})=> {
   const [value, setValue] = useState(0);
 
   const handleChange = (event, newValue) => {
@@ -21,14 +18,13 @@ export default function IconPositionTabs() {
   };
   
   const tabComponents = [
-    <HollyWood/>,
-    <BollyWood/>,
-    <Anime/>,
-    <Manga/>
+    hollyWood,
+    bollyWood,
+    anime,
+    manga
   
-    // <BollywoodComponent />,
-    // <AnimeComponent />,
-    // <MangaComponent />,
+
+    
   ];
   
   const iconForValue = (value) => {
@@ -48,7 +44,7 @@ export default function IconPositionTabs() {
 
    return (
     <div>
-      <div className='flex W-screen justify-center'>
+      <div className='flex W-screen justify-center bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-indigo-800 to-black'>
       <Tabs
         value={value}
         onChange={handleChange}
@@ -62,13 +58,13 @@ export default function IconPositionTabs() {
         />
         <Tab
           icon={iconForValue(1)}
-          label="Bollywood"
-          style={{ color: value === 1 ? 'blue' : 'cyan' }}
+          label="Indian Movies"
+          style={{ color: value === 1 ? 'lime' : 'cyan' }}
         />
         <Tab
           icon={iconForValue(2)}
           label="Anime"
-          style={{ color: value === 2 ? 'wheat' : 'green' }}
+          style={{ color: value === 2 ? 'green' : 'wheat' }}
         />
         <Tab
           icon={iconForValue(3)}
@@ -84,3 +80,5 @@ export default function IconPositionTabs() {
 
   );
 }
+export default IconPositionTabs;
+
