@@ -9,21 +9,21 @@ const Page = () => {
         </span>
       </div>
       <p className="bg-clip-text text-transparent bg-gradient-to-b from-pink-500 via-red-500 to-yellow-500 p-4">
-        Welcome to "MovFlix Hub" – your ultimate destination for a diverse cinematic experience! Immerse yourself in a world
+        Welcome to &quot;MovFlix Hub&quot; – your ultimate destination for a diverse cinematic experience! Immerse yourself in a world
         of entertainment that transcends borders, featuring a rich collection of foreign movies, Indian cinema, captivating
         animes, and mesmerizing mangas. At MovFlix Hub, we curate a vast selection of films and series across four distinct
-        genres: Most Popular, Action, Comedy, and Sci-fi, ensuring there's something for every taste.
+        genres: Most Popular, Action, Comedy, and Sci-fi, ensuring there&apos;s something for every taste.
       Discover the World:<br/>
     Explore a curated selection of international movies, offering a glimpse into different cultures, storytelling styles, and cinematic traditions. From critically acclaimed foreign films to Bollywood blockbusters, our library is a celebration of global storytelling.<br/>
     Anime and Manga Wonderland:<br/>
-    Dive into the enchanting realm of anime and manga. Unleash your imagination with a vast collection of animated series and graphic novels spanning various genres and art styles. Whether you're a seasoned anime enthusiast or a newcomer to the world of manga, MovFlix Hub has something to captivate every fan.<br/>
+    Dive into the enchanting realm of anime and manga. Unleash your imagination with a vast collection of animated series and graphic novels spanning various genres and art styles. Whether you&apos;re a seasoned anime enthusiast or a newcomer to the world of manga, MovFlix Hub has something to captivate every fan.<br/>
     Genres Galore:<br/>
     Tailor your viewing experience to your mood with our carefully categorized genres. Whether you crave the adrenaline rush of action-packed scenes, the light-hearted humor of comedy, the futuristic wonders of sci-fi, or the allure of the most popular releases, our genres cater to your cinematic preferences.<br/>
     On-Page Searching:<br/>
      Easily navigate our user-friendly interface to find your desired content. Our intuitive on-page search feature allows you to filter and discover movies, series, animes, and mangas seamlessly within the website.<br/>
      Web-Wide Exploration:<br/>
      Take your quest beyond our collection with our integrated web search feature. Effortlessly broaden your horizons by exploring content from across the internet, all from the convenience of MovFlix Hub.
-    At MovFlix Hub, we are committed to bringing the world of cinema to your fingertips. Embark on a cinematic journey like never before – where diversity meets entertainment, and every click opens the door to a new world of storytelling magic. Start exploring, start discovering, and let the global flicks unfold!
+    At MovFlix Hub, we are committed to bringing the world of cinema to your fingertips. Embark on a cinematic journey like never before-where diversity meets entertainment, and every click opens the door to a new world of storytelling magic. Start exploring, start discovering, and let the global flicks unfold!
       </p>
       <div className="flex justify-between p-6">
         <Link href="/">
