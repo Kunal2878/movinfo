@@ -7,7 +7,14 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
-
+@font-face {
+  font-family: "Neon Energy X";
+  src: url("/movinfo/public/Neon Energy x.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Old London";
+  src: url("/movinfo/public/OldLondon.ttf") format("truetype");
+}
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
