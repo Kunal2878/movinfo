@@ -1,6 +1,6 @@
-# MovInfo - Single Page Movie and Anime Database
+# MovFlix - Single Page Movie and Anime Database
 
-Welcome to MovInfo, a single-page web application that showcases the top, most popular Foreign English Movies, Indian Movies, Animes, and Manga. This project is powered by the TMDb API for movie information and the Anilist API for anime and manga data. To enhance the user interface, I've incorporated the DaisyUI Tailwind CSS plugin and Material-UI. The project makes use of RESTful API methods to fetch and display movie, anime, and manga details. 
+Welcome to MovFlix, a single-page web application that showcases the top, most popular Foreign English Movies, Indian Movies, Animes, and Manga. This project is powered by the TMDb API for movie information and the Anilist API for anime and manga data. To enhance the user interface, I've incorporated the DaisyUI Tailwind CSS plugin and Material-UI. The project makes use of RESTful API methods to fetch and display movie, anime, and manga details. 
 
 ## Features
 
@@ -25,12 +25,12 @@ To run this project on your local machine, follow these steps:
 
 1. **Clone the Repository**: Use the following command to clone the repository to your local machine:
    ```bash
-   git clone https://github.com/your-username/MovInfo.git
+   git clone https://github.com/your-username/MovFlix.git
    ```
 
 2. **Install Dependencies**: Navigate to the project directory and install the required dependencies using npm or yarn:
    ```bash
-   cd MovInfo
+   cd MovFlix
    npm install
    ```
 
@@ -48,10 +48,10 @@ To run this project on your local machine, follow these steps:
 
 ## Demo
 
-You can check out a live demo of MovInfo at [https://MovInfo.example.com](https://MovInfo.example.com).
+You can check out a live demo of MovFlix at [https://MovFlix.example.com](https://MovFlix.example.com).
 
 ## Feedback and Contributions
 
 If you have any feedback or suggestions for this project or would like to contribute, please feel free to open an issue or submit a pull request. Your contributions are greatly appreciated!
 
-Thank you for using MovInfo to explore the world of movies and anime. Enjoy your cinematic journey! 🎬🍿🎉
+Thank you for using MovFlix to explore the world of movies and anime. Enjoy your cinematic journey! 🎬🍿🎉
