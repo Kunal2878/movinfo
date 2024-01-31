@@ -201,7 +201,7 @@ console.log(title);
 
       {searchResult && (
 
-<div className="w-11/12 lg:w-3/4 absolute top-40 lg:top-80 left-6 flex flex-col shadow-xl shadow-cyan-400 items-center justify-center lg:ml-40 bg-gray-900 mb-3 bg-cover" style={{ zIndex: '200', maxHeight: '150vh', backgroundImage: `url('${selectedOption === 'movie' ? `https://image.tmdb.org/t/p/w300${searchResult.poster_path}` : `${searchResult?.coverImage?.large}`}')`, backgroundRepeat: 'no-repeat', objectFit: 'cover' }}>
+<div className="w-11/12 lg:w-3/4 absolute top-40 lg:top-80 left-6 flex flex-col shadow-xl shadow-cyan-400 items-center align-middle justify-center lg:ml-40 bg-gray-900 mb-3 bg-cover" style={{ zIndex: '200', maxHeight: '150vh', backgroundImage: `url('${selectedOption === 'movie' ? `https://image.tmdb.org/t/p/w300${searchResult.poster_path}` : `${searchResult?.coverImage?.large}`}')`, backgroundRepeat: 'no-repeat', objectFit: 'cover' }}>
 
 
 

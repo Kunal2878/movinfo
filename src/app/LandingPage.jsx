@@ -20,9 +20,9 @@ const LandingPage = () => {
 
 
 
-<iframe src="https://giphy.com/embed/rj12FejFUysTK" className='hidden lg:block lg:w-1/6  lg:p-2 lg:h-[150px] shadow-2xl shadow-green-400 rounded-full' ></iframe>
+<iframe src="https://giphy.com/embed/rj12FejFUysTK" className=' hidden lg:block lg:w-1/6  lg:p-2 lg:h-[150px] shadow-2xl shadow-green-400 rounded-full'></iframe>
 
-<iframe src="https://giphy.com/embed/xUOxeZUc8UFwMgH2MM" className='hidden lg:block lg:w-1/6  lg:p-2 lg:h-[150px] shadow-2xl shadow-green-400 rounded-full' ></iframe>
+<iframe src="https://giphy.com/embed/xUOxeZUc8UFwMgH2MM" className='hidden  lg:block lg:w-1/6 lg:scale-100 lg:p-2 lg:h-[150px] shadow-2xl shadow-green-400 rounded-full'></iframe>
 
 <iframe src="https://giphy.com/embed/0X7Bn1dSzEhPgwXoys" className='w-1/3 lg:w-1/6 h-[120px]  lg:p-2 lg:h-[150px] shadow-2xl shadow-green-400 rounded-full' ></iframe>
 

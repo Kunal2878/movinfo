@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head> <link rel="icon" href="/favicon.ico" /></Head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className + 'w-screen overflow-x-hidden'}>{children}</body>
     </html>
   )
 }
