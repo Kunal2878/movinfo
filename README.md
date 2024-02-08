@@ -48,7 +48,7 @@ To run this project on your local machine, follow these steps:
 
 ## Demo
 
-You can check out a live demo of MovFlix at [https://MovFlix.example.com](https://MovFlix.example.com).
+You can check out a live demo of MovFlix at [https://MovFlix.example.com](https://movflixweb.vercel.app/).
 
 ## Feedback and Contributions
 
