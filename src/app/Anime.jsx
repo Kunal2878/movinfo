@@ -193,14 +193,14 @@ async function getSciAnime() {
         <div className='m-2 w-full '>
         
         <Search allMovAniMang={allAnime} Id={2} />
-        <span className="ml-3 text-3xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent" style={{fontFamily:'Old London'}}>Most popular</span>
-        <AniMangaCarousel animangas ={filteredAnime} />
-        <span className="ml-3 text-3xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent" style={{fontFamily:'Old London'}}>Action</span>
-        <AniMangaCarousel animangas ={filteredacAnime} />
-        <span className="ml-3 text-3xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent" style={{fontFamily:'Old London'}}>Comedy</span>
-        <AniMangaCarousel animangas ={filteredcoAnime} />
-        <span className="ml-3 text-3xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent" style={{fontFamily:'Old London'}}>Sci fi</span>
-        <AniMangaCarousel animangas ={filteredsciAnime} />
+        
+        <AniMangaCarousel animangas ={filteredAnime} type={"Most popular"} />
+        
+        <AniMangaCarousel animangas ={filteredacAnime} type={"Action"}  />
+        
+        <AniMangaCarousel animangas ={filteredcoAnime} type={"Comedy"}  />
+        
+        <AniMangaCarousel animangas ={filteredsciAnime} type={"Sci fi"}  />
         
         
             </div>

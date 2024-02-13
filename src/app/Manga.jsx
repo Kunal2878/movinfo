@@ -193,14 +193,14 @@ async function getSciManga() {
         <div className='m-2 w-full bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-indigo-800 to-black'>
         
         <Search allMovAniMang={allManga} Id={2} />
-        <span className="ml-3 text-3xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent" style={{fontFamily:'Old London'}}>Most popular</span>
-        <AniMangaCarousel animangas ={filteredManga} />
-        <span className="ml-3 text-3xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent" style={{fontFamily:'Old London'}}>Action</span>
-        <AniMangaCarousel animangas ={filteredacManga} />
-        <span className="ml-3 text-3xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent" style={{fontFamily:'Old London'}}>Comedy</span>
-        <AniMangaCarousel animangas ={filteredcoManga} />
-        <span className="ml-3 text-3xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent" style={{fontFamily:'Old London'}}>Sci fi</span>
-        <AniMangaCarousel animangas ={filteredsciManga} />
+        
+        <AniMangaCarousel animangas ={filteredManga} type={"Most popular"} />
+        
+        <AniMangaCarousel animangas ={filteredacManga} type={"Action"} />
+        
+        <AniMangaCarousel animangas ={filteredcoManga} type={"Comedy"} />
+        
+        <AniMangaCarousel animangas ={filteredsciManga} type={"Sci fi"} />
         
         
             </div>

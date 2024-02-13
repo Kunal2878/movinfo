@@ -149,14 +149,14 @@ export default   function BollyWood() {
 <div className='m-2 w-full'>
 
 <Search allMovAniMang={allmovies} Id={1}/>
-<span className="ml-3 text-3xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent" style={{fontFamily:'Old London'}}>Most popular</span>
-<MovieCarousel movies={movies} />
-<span className="ml-3 text-3xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent" style={{fontFamily:'Old London'}}>Action</span>
-<MovieCarousel movies={acmovies} />
-<span className="ml-3 text-3xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent" style={{fontFamily:'Old London'}}>Comedy</span>
-<MovieCarousel movies={comovies} />
-<span className="ml-3 text-3xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent" style={{fontFamily:'Old London'}}>Family</span>
-<MovieCarousel movies={scimovies} />
+
+<MovieCarousel movies={movies} type={"Most popular"}/>
+
+<MovieCarousel movies={acmovies} type={"Action"} />
+
+<MovieCarousel movies={comovies} type={"Comedy"}/>
+
+<MovieCarousel movies={scimovies} type={"Family"} />
 
 
     </div>
