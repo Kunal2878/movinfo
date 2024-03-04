@@ -43,8 +43,8 @@ const IconPositionTabs=({hollyWood,bollyWood,manga,anime})=> {
   };
 
    return (
-    <div>
-      <div className='flex W-screen justify-center bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-indigo-800 to-black'>
+    <div className=''>
+      <div className='flex w-screen  justify-center bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-indigo-800 to-black'>
       <Tabs
         value={value}
         onChange={handleChange}

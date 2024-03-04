@@ -74,7 +74,14 @@ const AniMangaCarousel = ({ animangas,type }) => {
     <div key={Manga.id} className="carousel-item w-1/3 lg:w-1/5  overflow-none">
     
     <div className="card w-96 lg:w-60  m-2  ">
-    <figure className="flex flex-col shadow-2xl shadow-cyan-500"><img src={Manga.coverImage.large} alt={Manga.title.english || Manga.title.romaji} className='w-96 relative' style={{ maxHeight: '200px' }} />
+    <figure className="flex flex-col shadow-2xl shadow-cyan-500">
+      <div className="aspect-w-16 aspect-h-5">
+    <img
+      src={Manga.coverImage.large}
+      alt={Manga.title.english || Manga.title.romaji}
+      className="object-cover w-full h-full"
+    />
+  </div>
     <div className="avatar placeholder absolute w-full flex justify-end z-40 lg:mt-44 mt-36 ml-2">
     <div className=" text-neutral-content rounded-full w-10 bg-gradient-to-r from-indigo-500 to-gray-800">
     <span className="text-sm font-black">⭐{(Manga.averageScore / 10).toFixed(1)}</span>
