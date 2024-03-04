@@ -64,10 +64,10 @@ import Search from './Search'
     params.page++;
   }
 
-  return movies.slice(0, 100); // Return only the first 100 movies
+  return movies.slice(0, 100);  
 }
   function getCoMovie() {
-  const apiKey = 'f847d8a74355547b393b1921d50fb6aa'; // Replace with your actual TMDB API key
+  const apiKey = 'f847d8a74355547b393b1921d50fb6aa'; 
   const tmdbEndpoint = 'https://api.themoviedb.org/3/discover/movie';
   const params = {
     api_key: apiKey,

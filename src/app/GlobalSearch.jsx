@@ -111,6 +111,7 @@ console.log(title);
 
   };  
   return (
+    <div className='w-full block'>
     <div className='m-2 w-full p-4  flex justify-center items-center'>
 
   <div className=' w-full flex  justify-center'>
@@ -238,8 +239,8 @@ console.log(title);
 
 )}
 
-
-
+</div>
+<div className="w-full overflow-hidden"><marquee>⚠⚠As movies are sourced from TMDB Api, It is  currently experiencing API issues. Please stay tuned for updates.⚠⚠</marquee></div>
     </div>
   );
 };
