@@ -2,7 +2,7 @@
 'use client'
 
 import React, { useState, useEffect } from 'react';
-
+import Link from 'next/link'
 const MovieCarousel = ({ movies, type }) => {
   const [searchResults, setSearchResults] = useState([]); // Results of the search
   const [isMovieOverviewVisible, setMovieOverviewVisible] = useState(null);
@@ -84,13 +84,15 @@ const MovieCarousel = ({ movies, type }) => {
                 style={{ maxHeight: '200px' }}
                 alt={movie.title}
               /> */}
-               <div className="aspect-w-16 aspect-h-5">
+              <Link href={`/movie/${movie.title}`} className="aspect-w-16 aspect-h-5">
+              
     <img
       src={`https://image.tmdb.org/t/p/w300${movie.poster_path}`}
       alt={movie.title}
       className="object-cover w-full h-full"
     />
-  </div>
+  
+  </Link>
               <div className="avatar placeholder absolute w-full flex justify-end z-40 lg:mt-44 mt-36  ml-2">
                 <div className="text-neutral-content rounded-full w-10 bg-gradient-to-r from-indigo-500 to-gray-800">
                   <span className="text-sm font-black">⭐{movie.vote_average === 0 ? 5 : movie.vote_average.toFixed(1)}</span>

@@ -2,6 +2,7 @@
 'use client'
 
 import React, { useState, useEffect } from 'react';
+import Link from 'next/link'
 const AniMangaCarousel = ({ animangas,type }) => {
 
   const [selectedMovie, setSelectedMovie] = useState(null); 
@@ -75,13 +76,20 @@ const AniMangaCarousel = ({ animangas,type }) => {
     
     <div className="card w-96 lg:w-60  m-2  ">
     <figure className="flex flex-col shadow-2xl shadow-cyan-500">
-      <div className="aspect-w-16 aspect-h-5">
+      <Link   href={{
+              pathname: `/anime/${Manga.title.english}`,
+
+            }}className="aspect-w-16 aspect-h-5">
+ 
+          
+ 
+
     <img
       src={Manga.coverImage.large}
       alt={Manga.title.english || Manga.title.romaji}
       className="object-cover w-full h-full"
     />
-  </div>
+  </Link>
     <div className="avatar placeholder absolute w-full flex justify-end z-40 lg:mt-44 mt-36 ml-2">
     <div className=" text-neutral-content rounded-full w-10 bg-gradient-to-r from-indigo-500 to-gray-800">
     <span className="text-sm font-black">⭐{(Manga.averageScore / 10).toFixed(1)}</span>
@@ -94,7 +102,7 @@ const AniMangaCarousel = ({ animangas,type }) => {
     <h4 className="flex justify-center font-semibold">
     {truncateText(Manga.title.english || Manga.title.romaji, 14)}
     </h4>
-    <h4 className="text-yellow-400 font-normal flex justify-center">📆{formatStartDate(Manga.startDate)}</h4>
+    <h className="text-yellow-400 font-normal flex justify-center">📆{formatStartDate(Manga.startDate)}</h>
     
     </div>
     <div className="card-actions justify-center">
@@ -119,9 +127,9 @@ const AniMangaCarousel = ({ animangas,type }) => {
             </button>
           </div>
     {selectedMovie === 'No Information Available' ? (
-  <p><span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">No Data Avaiable</span></p>
+  <p><span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">No Data Available</span></p>
   ) : (
-      <p><span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">{(selectedMovie.includes('<br>') ? selectedMovie.substring(0, selectedMovie.indexOf('<br>')) : selectedMovie)} </span></p>
+      <p><span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">{selectedMovie.includes('<br>') ? selectedMovie.substring(0, selectedMovie.indexOf('<br>')) : selectedMovie}</span></p>
       )}
 
 

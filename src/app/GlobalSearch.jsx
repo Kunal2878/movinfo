@@ -8,6 +8,7 @@ const GlobalSearch = () => {
   const [close, setClose] = useState(null);
 
   const searchByTitle = async (title, category) => {
+    console.log(title,category)
     switch (category) {
       case 'movie':
         return searchMovieByTitle(title);
@@ -21,7 +22,7 @@ const GlobalSearch = () => {
   };
 
   const searchMovieByTitle = async (title) => {
-console.log(title);
+
     const apiKey = 'f847d8a74355547b393b1921d50fb6aa';
     const tmdbEndpoint = 'https://api.themoviedb.org/3/search/movie';
 
@@ -41,7 +42,7 @@ console.log(title);
   
 
     const anilistEndpoint = 'https://graphql.anilist.co';
-    console.log(title, category);
+
     try {
       const response = await fetch(anilistEndpoint, {
         method: 'POST',
@@ -89,7 +90,6 @@ console.log(title);
   const handleSearch = async () => {
     try {
       const result = await searchByTitle(searchQuery, selectedOption);
-      console.log(result)
       if (result) {
         setSearchResult(result);
       } else {
@@ -240,7 +240,7 @@ console.log(title);
 )}
 
 </div>
-<div className="w-full overflow-hidden"><marquee>⚠⚠As movies are sourced from TMDB Api, It is  currently experiencing API issues. Please stay tuned for updates.⚠⚠</marquee></div>
+<div className="w-full overflow-hidden"><marquee>⚠⚠As movies are sourced from TMDB Api, It is  currently experiencing API issues with searching movies. Please stay tuned for updates.⚠⚠</marquee></div>
     </div>
   );
 };

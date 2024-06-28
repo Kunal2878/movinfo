@@ -28,6 +28,7 @@ async function getAnime() {
                   }
                   averageScore
                   description
+                  genres
                 }
               }
             }
@@ -70,6 +71,7 @@ async function getAcAnime() {
                   }
                   averageScore
                   description
+                  genres
                 }
               }
             }
@@ -113,6 +115,7 @@ async function getCoAnime() {
                   }
                   averageScore
                   description
+                  genres
                 }
               }
             }
@@ -155,6 +158,7 @@ async function getSciAnime() {
                   }
                   averageScore
                   description
+                  genres
                 }
               }
             }

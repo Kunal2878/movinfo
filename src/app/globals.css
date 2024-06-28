@@ -75,3 +75,32 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+/* .Carousel {
+  width: fit-content; /* Adjust width as needed */
+/* } */
+
+.Carousel-inner {
+  scroll-snap-type: x mandatory; /* Enable snapping */
+/* Needed for centering */
+  transform: translateX(calc(50% - (40%))); 
+  transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+.Carousel-item {
+  scroll-snap-align: center; /* Align items to the left edge */ /* Allow images to adjust to content */
+  width: 80%; /* All slides have same initial width */
+  /* margin: 0 5%;  */
+}
+
+.Carousel-item.center {
+  width: 90%; /* Center slide takes 90% width */
+  margin: 0 auto; /* Center horizontally */
+  transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+.setbg{
+  background-image:url("../../public/land4.jpg");
+  background-position:center;
+  background-attachment: fixed;
+}
+
