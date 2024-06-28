@@ -21,7 +21,7 @@ const Home = () => {
      {/* <BtmNav/>  */}
     
       {/* <GlobalSearch/> */}
-    {/* <IconPositionTabs hollyWood={<HollyWood />} bollyWood={<Bolly />} manga={<Manga />} anime={<Anime />} /> */}
+    <IconPositionTabs hollyWood={<HollyWood />} bollyWood={<Bolly />} manga={<Manga />} anime={<Anime />} />
 
 
 
