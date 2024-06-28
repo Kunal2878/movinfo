@@ -1,5 +1,5 @@
 import React from 'react'
-import MovieName from '../../Components/showmovie'
+import MovieName from '../../Components/showMovie'
 async function show_movie({params}) {
 
     const { name } = params
