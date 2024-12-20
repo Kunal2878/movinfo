@@ -15,6 +15,7 @@ function LandingPage() {
 
     setCurrentSlide(newSlide);
   };
+  
   useEffect(() => {
   
     setVisibleMovies(

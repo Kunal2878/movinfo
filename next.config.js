@@ -1,4 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
-
-module.exports = nextConfig
+const nextConfig = {
+    output: 'standalone', // Important for Docker
+    reactStrictMode: true,
+    // Remove any Vercel-specific configurations
+  }
+  
+  module.exports = nextConfig
